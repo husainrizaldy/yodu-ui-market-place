@@ -1,0 +1,322 @@
+/*
+YODU-CIRCLE
+styles by disrespected-developer
+
+INFO!
+default layout for less than 576px (small device)
+using media-query :
+   - min-width : 576px (landscape phone, 576px and up)
+   - min-width : 768px (tablets, 768px and up)
+   - min-width : 992px (desktops, 992px and up)
+   - min-width : 1200px (large desktops, 1200px and up)
+   - min-width : 1400px (larger desktops, 1400px and up)
+
+Note : dont put some class or include files before root
+================================================================*/
+:root {
+    /*background-color: #2ad2c9;*/
+/*background-image: linear-gradient(280deg, #2ad2c9 0%, #2774ae 46%, #002855 100%);*/
+
+    /*--color--*/
+    --first-color:#2AD2C9;
+    --second-color:#2774AE;
+    --third-color:#002855;
+    --white-color: #E6E7E9;
+
+    /*--bacground--*/
+    --background-transition:linear-gradient(43deg, #002855 0%, #2774ae 67%, #2ad2c9 100%);
+    --background-btn-light:rgb(45 134 148 / 75%);
+
+    --shadow-navigation:0 2px 5px rgba(0,0,0,.2);
+
+    /*--typography--*/
+    --body-font:'Poppins', sans-serif;
+    --head-font-size:3rem;
+    --lead-font-size:2rem;
+    --normal-font-size:.938rem;
+    --small-font-size:.813rem;
+
+    /*-- z index --*/
+    --z-fixed: 100;
+}
+
+
+/*==EXTERNAL FONT==*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap')
+
+/*== BASE ==*/
+html { scroll-behavior: smooth; }
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+/*navigation*/
+.head-navigation {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    /*box-shadow: var(--shadow-navigation);*/
+    margin-bottom: 30px;
+    z-index: var(--z-fixed);
+}
+.head-navigation.scrolled {
+  background-color: #25252585;
+  color: #000;
+}
+.head-navigation .logo-attr {
+    margin: 18px 0 10px 0;
+    float: left;
+}
+.head-navigation .logo-attr > img {
+    height: 50px;
+}
+.menu-nav {
+    float: right;
+}
+.menu-nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.menu-nav ul li {
+    list-style: none;
+}
+.menu-nav ul li a {
+    display: block;
+    margin:10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 10px;
+
+}
+.menu-nav ul li a:after {
+    content: '';
+    display: block;
+    width: 0;
+    background-color: #2AD2C9;
+    height: 2px;
+    margin-top: 5px;
+    transition: all .3s;
+}
+.menu-nav ul li a:hover:after {
+    width: 100%;
+}
+.clearfix {
+    clear: both;
+}
+
+@media screen and (max-width: 768px) {
+    .head-navigation.scrolled {
+        background-color: transparent;
+    }
+    .head-navigation .nav-toggle {
+        float: right;
+        display: block;
+        width: 46px;
+        height: 46px;
+        border-radius: 6px;
+        margin: 18px 0 10px 0;
+        cursor: pointer;
+        text-align: center;
+        font-size: 32px;
+        color: var(--white-color);
+        background: var(--background-btn-light);
+    }
+    .head-navigation .nav-toggle:before {
+        content: '\f0c9';
+        font-family: fontAwesome;
+    }
+    .nav-toggle.active:before {
+        content: '\f00d';
+    }
+    .menu-nav {
+        display: none;
+    }
+    .menu-nav.active {
+        display: block;
+        width: 100%;
+        background-color: rgb(45 134 148 / 75%);
+        border-radius: 10px;
+    }
+    .menu-nav.active ul {
+        display: block;
+    }
+    .menu-nav.active ul li a{
+        margin:0;
+    }
+    .menu-nav ul li a {
+        text-align: left;
+        padding: 5px 20px;
+    }
+}
+
+/*== class ==*/
+.bg-apps{
+    background-color: #002855;
+    background-image: linear-gradient(43deg, #002855 0%, #2774ae 67%, #2ad2c9 100%);
+}
+
+.hero-header {
+    position: relative;
+    height: 100vh;
+    /*background-image: url(../image/background/home-bg-sm.png);*/
+    background-image: linear-gradient(rgb(0 0 0 / 0%),rgb(0 0 0 / 50%)),url(../image/background/home-bg-sm.png);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.circle-stuff > img.circle-stf{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 220px;
+    height: auto;
+}
+
+.intro-head {
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0px 20px;
+}
+.intro-head h1.text-head {
+    font-size: 2.956rem;
+    font-weight: 700;
+}
+
+/*== Banner ==*/
+
+.section-content {
+    background: linear-gradient(#0e131a, rgba(0,0,0,0.5));
+    padding: 3rem 0;
+}
+.area-banner {
+    width: 100%;
+}
+
+.area-banner img.zone {
+    width: inherit;
+    height: auto;
+}
+.slide-content {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 3px;
+    display: flex;
+    flex-direction: row;
+}
+.slide-content > .card {
+    border:none!important;
+}
+.item-card .item-desc {
+    text-align: center;
+}
+
+.item-card .item-desc > p {
+    margin:5px 0;
+}
+.item-card .item-desc .iName {
+    color: #17354c;
+    font-weight: 500;
+    font-size: .857rem;
+}
+.item-card .item-desc .iPrice {
+    color: #2774AE;
+    font-weight: 600;
+    font-size: 1.167rem;
+}
+.item-card button.y-btn {
+    border: none;
+    padding: 5px 14px;
+    text-align: center;
+    background-image: linear-gradient(280deg, #2ad2c9 0%, #2774ae 46%, #002855 100%);
+    color: #fff;
+    border-radius: 30px;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+   :root {
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+   }
+}
+
+
+
