@@ -11,4 +11,21 @@ $(document).ready(function(){
         $('.head-navigation').toggleClass('scrolled', $(this).scrollTop() > 620 );
     });
 
+ 
+ 	// var widNew = $(window).width();
+ 	// if (widNew <= 475) 
+ 	// {
+ 	// 	$('.textBtn').addClass('dis-none');
+ 	// }
+ 	// else
+ 	// {
+ 	// 	var checkClass = $('.textBtn').hasClass('dis-none');
+ 	// 	if (checkClass == true) {
+ 	// 		$('.textBtn').removeClass('dis-none');
+ 	// 	}
+ 		
+ 	// }
+    
+    
+
 });
