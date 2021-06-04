@@ -64,6 +64,16 @@ body {
 .yd-gap-5 { height: 60px; }
 .yd-gap-6 { height: 70px; }
 
+/*line*/
+.yd-hr-bottom {
+    border-bottom: 1px solid rgb(255 255 255 / 66%);
+}
+/*.yd-blog-border-bottom {
+    padding-bottom: 20px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid rgb(255 255 255 / 66%);
+}*/
+
 /*navigation*/
 .head-navigation {
     width: 100%;
@@ -459,12 +469,20 @@ body {
     border: none;
     padding: 9px 18px;
     width: 100%;
+    cursor: pointer;
+    transition: .3s color;
 }
+.yd-panel-button .yd-btn-bottom:hover {
+    background-color: #053350d1;
+    color: #2ad2ca;
+}
+
 .yd-panel {
 
 }
 .yd-sidebar-post {
     text-align: center;
+    padding: 15px 15px;
 }
 .yd-sidebar-post .yd-minibar {
     color: #fff;
@@ -475,21 +493,23 @@ body {
     text-align: center;
 }
 
+.yd-minibar .yd-bar-context img{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
 .yd-panel,
 .yd-sidebar-post {
     background: rgb(0 0 0 / 21%);
-    /*padding: 15px 15px 0;*/
+    
     margin-bottom: 15px;
 }
 .yd-blog-post {
     padding: 15px 15px 0;
     margin-bottom: 30px;
 }
-.yd-blog-border-bottom {
-    padding-bottom: 20px;
-    margin-bottom: 22px;
-    border-bottom: 1px solid rgb(255 255 255 / 66%);
-}
+
 
 .yd-blog-post .yd-post-img {
     position: relative;
@@ -508,7 +528,6 @@ body {
 
 .yd-post-desc {
     padding-top: 20px;
-     
 }
 .yd-blog-post .yd-post-title,
 .yd-blog-post .yd-post-title a {
@@ -532,6 +551,7 @@ body {
     color: #c7cacc;
 }
 .yd-blog-post .yd-btn-post {
+    display: inline-block;
     background-color: #2ad2ca;
     color: #022547;
     font-weight: 600;
@@ -539,8 +559,8 @@ body {
     text-align: center;
     text-decoration: none;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
-
 
 
 
@@ -739,8 +759,21 @@ ul.sc-group li a svg {
         --small-font-size: .875rem;
    }
 
+   /*list article*/
+   .yd-post-desc > .yd-hr-bottom,
+   .yd-post-desc > .yd-gap {
+        display: none;
+   }
+   .yd-post-desc {
+    padding-top: 0px; 
+   }
+
 
    /*section footer*/
+   .section-footer {
+        border-top: 1px solid #ffffff6b;
+        padding-top: 15px;
+    }
    .yd-instant-row {
         display: flex;
         flex-direction: row;
