@@ -8,7 +8,7 @@ $(document).ready(function(){
 
     // change nav background color when scroll
     $(window).scroll(function() {
-        $('.head-navigation').toggleClass('scrolled', $(this).scrollTop() > 620 );
+        $('.head-navigation').toggleClass('scrolled', $(this).scrollTop() > 320 );
     });
 
  
