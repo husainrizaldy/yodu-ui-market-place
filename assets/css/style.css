@@ -51,7 +51,12 @@ body {
     background-color: #002855;
     background-image: linear-gradient(45deg, #002855 33%, #2ad2c9 100% ,#2774ae 0%);
 }
-
+/*.bg-apps-zone {
+    background-image: url('../image/background/witfsa.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}*/
 .yd-gap, .yd-gap-1, .yd-gap-2, .yd-gap-3, .yd-gap-4, .yd-gap-5, .yd-gap-6 {
     display: block;
     height: 15px;
@@ -83,6 +88,7 @@ body {
     background-color: #00285596;
     /*box-shadow: var(--shadow-navigation);*/
     margin-bottom: 30px;
+    padding-bottom: 5px;
     z-index: var(--z-fixed);
 }
 .head-navigation.scrolled {
@@ -140,10 +146,11 @@ body {
     .head-navigation .nav-toggle {
         float: right;
         display: block;
-        width: 46px;
-        height: 46px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
         border-radius: 6px;
-        margin: 5px 0 10px 0;
+        margin: 12px 0 0 0;
         cursor: pointer;
         text-align: center;
         font-size: 32px;
@@ -154,14 +161,16 @@ body {
         background: var(--background-btn-light);
     }
     .head-navigation .nav-toggle:before {
-        font-family: "Font Awesome 5 Free"; 
-        font-weight: 900; 
-        content: "\f007";
+        content: "\f0c9";
+        font-size: 28px;
+        font-weight: 400;
+        font-family: "FontAwesome";
     }
     .nav-toggle.active:before {
-        content: '\f0c9';
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
+        content: '\f00d';
+        font-size: 28px;
+        font-weight: 300;
+        font-family: "FontAwesome";
     }
     .menu-nav {
         display: none;
@@ -642,12 +651,15 @@ body {
     margin-bottom: calc(1.5rem/2); 
 }
 .clt-item a {
-    transition: all .5s ease;
+    transition: opacity .5s ease;
 }
 .clt-item img {
     max-width: 100%;
     height: auto;
     border-radius: 20px;
+}
+.clt-item:hover img {
+    opacity: .5;
 }
 .yd-spin-catalogue {
     display: flex;
@@ -743,7 +755,7 @@ body {
 
 /*footer section*/
 .section-footer {
-    
+    background: linear-gradient(0deg, #0000006e, transparent);
 }
 .yd-instant-row {
     display: block;
@@ -791,7 +803,7 @@ body {
     content: '';
     position: absolute;
     display: block;
-    top: 12px;
+    top: 11px;
     left: 0px;
     height: 1px;
     width: 100%;
@@ -808,7 +820,9 @@ body {
     flex-wrap: wrap;
 }
 .yd-nav-foot .ol-group {
-    flex: 1 1 auto;
+    flex: 0 0 50%;
+    width: 50%;
+    margin-bottom: 15px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -826,11 +840,11 @@ body {
 }
 .yd-text-foot {
     text-align: center;
+    padding-bottom: 5px;
 }
 .yd-text-foot p {
     color: #969696;
     font-size: 11px;
-    margin-bottom: 5px;
 }
 
 /*icon social media for nav*/
@@ -839,7 +853,7 @@ body {
     text-align: center;
 }
 ul.sc-group {
-
+    padding-left: 0;
 }
 
 ul.sc-group li {
@@ -869,8 +883,31 @@ ul.sc-group li a svg {
 /*
  * media query for mobile
  */
+@media screen and (min-width: 576px) {
+    /*footer nav*/
+    .yd-socialmedia-foot {
+        margin: 0 0 1.5rem 0;
+    }
+    .yd-nav-foot .ol-group a {
+        margin-bottom: 10px;
+    }
+    .yd-nav-foot .ol-group {
+        flex: 0 0 25%;
+        width: 25%;
+        margin-bottom: 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
 
+/* not using for max-width :(
+ * optimizing some class, later wil be fixed
+ */
 @media screen and (max-width: 576px) {
+
+    
+
+
     .widget-title .widget-head-text {
         font-size: 1.1rem;
     }
@@ -1001,6 +1038,5 @@ ul.sc-group li a svg {
     }
     .yd-text-foot {
         padding: 10px 0;
-        background: linear-gradient(0deg, #0000006e, transparent);
     }
 }
