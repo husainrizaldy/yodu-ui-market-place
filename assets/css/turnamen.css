@@ -1,0 +1,283 @@
+.bg-apps-revert {
+    background-color: #002855;
+    background-image: linear-gradient(225deg, #002855 33%, #2ad2c9 100% ,#2774ae 0%);
+}
+._header-non {
+    display:flex;
+    width:100%;
+    justify-content: flex-end;
+    position:relative;
+}
+._head-banner {
+    flex: 0.8;
+    -webkit-mask-image: linear-gradient(
+89deg, rgb(0 0 0 / 0%), rgb(27 150 160) 40%);
+}
+._sub-banner {
+    flex: 0.8;
+    -webkit-mask-image: linear-gradient(
+358deg, rgba(0,0,0,0), rgba(0,0,0,1) 40%);
+}
+._side-head-content {
+    position: absolute;
+    bottom: 0px;
+    left: 125px;
+}
+._side-head-content img.img-top-content {
+    box-shadow: 7px 7px 10px -5px #000;
+    width: 140px;
+    border-radius: .25rem!important;
+}
+._sub-side-text  {
+    font-size: 2.5rem;
+    color: #f9fcfc;
+    font-weight: 600;
+    text-shadow: 4px 6px 7px #000;
+}
+._btn-social, ._btn-social ._icon-wrapper {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+}
+._btn-social ._icon-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #000;
+    position: relative;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+    margin-left: 8px;
+}
+._btn-social ._icon-wrapper img {
+    width: 20px!important;
+    height: 20px!important;
+}
+._btn-social ._icon-wrapper:hover {
+    background-color: #555;
+    cursor: pointer;
+}
+.cd-content {
+    background: #00182f7d!important;
+    border-radius: 15px!important;
+    color: #fff;
+    font-size: .89rem!important;
+}
+.cd-content  .cd-separate {
+    border: 1px solid #2ecce345;
+    -webkit-align-self: center;
+    align-self: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.cd-content ._right-title {
+    margin-bottom: 4px;
+    color: #e2dace;
+}
+.cd-support-side-icon {
+    display:flex;
+    padding:0;
+    justify-content:Center;
+}
+.cd-content button.cd-btn,
+.cd-content a.cd-btn {
+    border: none;
+    padding: 10px 18px;
+    text-align: center;
+    background-color: #ff6347;
+    color: #fff;
+    border-radius: 15px;
+    margin: 0 auto;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+}
+.cd-content .cd-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cd-content .cd-row .cd-side-flex{
+    flex: 0 0 auto;
+    width: 25%;
+}
+.cd-content .cd-row .cd-sub-body-content{
+    flex: 0 0 auto;
+    width: 66.6666666667%;
+}
+.cd-content-pills {
+    background: #00182fe0!important;
+    border-radius: 5px!important;
+    border: 1px solid rgb(13 82 112 / 43%);
+    color: #fff;
+}
+.cd-content-pills .cd-tab-content {
+    font-size: .89rem!important;
+}
+.cd-content-pills .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #171920!important;
+}
+.cd-content-pills .nav-link {
+    color: #ffffff!important;
+}
+
+
+/* card list tournamen - Home */
+.tourow {
+    display: flex;
+    flex-direction: row;
+}
+/* .tourow .col-tour {
+    flex-basis: 25%;
+} */
+
+.env-item {
+    width: 100%;
+    border: none;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #181a20;
+    color: #e2dace;
+}
+.env-item .env-body {
+    position: relative;
+    padding: 0;
+}
+.env-content {
+    position: relative;
+    min-height: 180px;
+    font-size: 14px;
+}
+.env-content .item-content {
+    min-height: 0px;
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    border-radius: 20px;
+    background: rgb(42,45,52);
+    background: linear-gradient(0deg, rgba(42,45,52,1) 20%, rgba(42,45,52,0.48783263305322133) 100%);
+    padding: 1rem;
+    text-overflow: ellipsis;
+}
+.topShad {
+    -webkit-mask-image: linear-gradient( 
+358deg, rgb(0 0 0 / 0%), rgb(24 26 32) 100%);
+}
+.topShad img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+}
+.env-content .item-content ._separate {
+    width: 100%;
+    border: 1px solid #3b3e46;
+    -webkit-align-self: center;
+    align-self: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.env-content .item-content ._title {
+    text-decoration: none!important;
+    font-weight: 300;
+}
+.env-btn-group {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.env-btn-group .en-btn {
+    text-decoration: none;
+    padding: .25rem 1.5rem;
+    font-size: .875rem;
+    border-radius: 0.9rem;
+}
+
+.env-btn-group .ebt-color-1 {
+    color: #000;
+    background-color: #0dcaf0;
+    border-color: #0dcaf0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.env-btn-group .ebt-color-2 {
+    color: #000;
+    background-color: #ffc107;
+    border-color: #ffc107;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.floating-badge {
+    position: absolute;
+    color: #ddd;
+    border-radius: 30px;
+    font-size: 12px;
+    padding: 4px 8px;
+    left: 10px;
+    top: 10px;
+}
+.colf-primary {
+    background-color: #4294c8;
+}
+.font-weight-bold {
+    font-weight: 700!important;
+}
+
+
+@media screen and (max-width: 425px) {
+    /* card tournamen */
+    .env-btn-group .en-btn {
+        padding: .3rem 3rem!important;
+    }
+
+    /* tournamen detail */
+    ._header-non {
+        min-height: 200px;
+    }
+    ._head-banner {
+        flex: 1;
+    }
+    ._side-head-content img.img-top-content {
+        width: 60px!important;
+    }
+    ._sub-side-text {
+        font-size: 1.2rem!important;
+    }
+    ._side-head-content {
+        left: 25px!important;
+    }
+}
+@media screen and (max-width: 768px) {
+    ._side-head-content {
+        left: 40px;
+    }
+    ._side-head-content img.img-top-content {
+        width: 100px;
+    }
+    ._sub-side-text {
+        font-size: 1.5rem;
+    }
+    ._btn-social ._icon-wrapper {
+        width: 25px;
+        height: 25px;
+    }
+    ._btn-social ._icon-wrapper img {
+        width: 15px!important;
+        height: 15px!important;
+    }
+    /* card tournamen */
+    .env-btn-group .en-btn {
+        padding: .25rem 1rem;
+    }
+}
+
+/* footer setting */
+.bg-apps-revert .section-footer .line-mail span {
+    background-color: #167881;
+}
